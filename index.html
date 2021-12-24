@@ -37,6 +37,10 @@
   <link rel="stylesheet" href="css/pay.css">
   <link rel="stylesheet" href="css/option-pay.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/overlay.css">
+  <link rel="stylesheet" href="css/modal.css">
+
+  <script src="scripts/burger.js" defer></script>
 </head>
 
 <body>
@@ -46,21 +50,21 @@
         <use xlink:href='#logo'/>
       </svg>
       <button class="burger header_burger">
-        <spn class="burger_line"></spn>
+        <span class="burger_line"></span>
       </button>
       <nav class="header_navigation navigation">
         <ul class="navigation_list">
           <li class="navigation_item">
-            <a href="" class="navigation_link">Пихта Фразера</a>
+            <a href="#one" class="navigation_link">Пихта Фразера</a>
           </li>
           <li class="navigation_item">
-            <a href="" class="navigation_link">Русская ель</a>
+            <a href="#two" class="navigation_link">Русская ель</a>
           </li>
           <li class="navigation_item">
-            <a href="" class="navigation_link">Сибирская пихта</a>
+            <a href="#three" class="navigation_link">Сибирская пихта</a>
           </li>
           <li class="navigation_item">
-            <a href="" class="navigation_link">Как оплатить</a>
+            <a href="#pay" class="navigation_link">Как оплатить</a>
           </li>
         </ul>
       </nav>
@@ -162,7 +166,7 @@
               <p class="option-pay_description">Visa/Mastercard или PayPal из любой страны</p>
             </article>
           </li>
-          <li class="pay_item">
+          <li class="pay_item" id="pay">
             <article class="pay_option_pay option-pay">
               <div class="option-pay_picture_wrapper">
                 <svg class="logo option-pay_picture" viewBox='0 0 164 76'>
@@ -260,6 +264,33 @@
       </div>
     </div>
   </footer>
+
+  <div class="overlay overlay_order">
+    <div class="modal">
+      <button class="modal_close">
+        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            fill="currentColor" />
+        </svg>
+      </button>
+      <h2 class="modal_title">Оформить заказ</h2>
+      <form class="modal_form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <label class="modal_label">
+          <span class="modal_label_text">ФИО</span>
+          <input class="modal_input" type="text" placeholder="Введите ваше ФИО">
+        </label>
+
+        <label class="modal_label modal_label_last">
+          <span class="modal_label_text">Телефон</span>
+          <input class="modal_input" type="tel" placeholder="Введите ваш номер телефона">
+        </label>
+        <input class="modal_order" type="hidden" name="order">
+        <button class="modal_button">Заказать звонок</button>
+      </form>
+    </div>
+  </div>
+  <div class="overlay overlay_consultation"></div>
 
   <svg class="hide">
     <symbol id='logo' width="164" height="76" viewBox="0 0 164 76" fill="none" xmlns="http://www.w3.org/2000/svg">

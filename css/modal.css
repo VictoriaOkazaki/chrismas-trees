@@ -1,0 +1,110 @@
+.modal {
+  position: relative;
+  background-color: var(--main-color);
+  max-width: 950px;
+  border: 1px solid var(--second-color);
+  box-sizing: border-box;
+  border-radius: 14px;
+  padding: 60px 85px;
+  width: 100%;
+}
+
+.modal_close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: transparent;
+  border: none;
+  color: var(--main-bg-color);
+  transition: color 0.3s ease-in;
+}
+
+.modal_close:hover {
+  color: var(--second-color);
+}
+
+.modal_close:focus {
+  color: var(--second-color);
+  outline: 1px solid var(--second-color);
+}
+
+.modal_close:active {
+  color: var(--second-bg-color);
+}
+
+.modal_title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--main-bg-color);
+  margin-bottom: 50px;
+}
+
+.modal_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal_label {
+  display: block;
+  position: relative;
+}
+
+.modal_label_text {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  color: var(--second-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+}
+
+.modal_input {
+  width: 100%;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  padding: 45px 15px 31px;
+  border: 1px solid var(--second-bg-color);
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.modal_label_last {
+  margin-bottom: 60px;
+}
+
+.modal_button {
+  padding: 14px 36px;
+  background: var(--trigger-color);
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: var(--main-color);
+  align-self: flex-end;
+  border: 0;
+}
+
+.modal_button:hover {
+  background-color: var(--two-color);
+  transition: 0.3s;
+  color: var(--main-color);
+}
+
+.modal_button:active {
+  background-color: var(--two-color);
+  transition: 0.3s;
+  color: var(--main-color);
+  box-shadow: 0px 2px 6px rgba(2, 67, 52, 0.36);
+}
+
+.modal_button:focus {
+  outline: 2px solid var(--second-color);
+  border-color: transparent;
+}

@@ -9,12 +9,8 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
-  overflow-x: auto;
+  overflow-y: auto;
   display: none;
-}
-
-.overlay_order {
-  display: flex;
 }
 
 .overlay_active {

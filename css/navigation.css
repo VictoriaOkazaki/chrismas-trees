@@ -84,4 +84,10 @@
 }
 
 @media (max-width: 580px) {
+  .header_container {
+    padding: 10px;
+  }
+  .navigation_link {
+    font-size: 12px;
+  }
 }

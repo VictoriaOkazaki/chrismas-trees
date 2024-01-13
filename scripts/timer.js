@@ -28,7 +28,7 @@ const timer = () => {
   document.body.prepend(timer);
 
   const startTimer = () => {
-    const deadline = new Date(2023, 11, 31, 0, 0, 0);
+    const deadline = new Date(2024, 11, 31, 0, 0, 0);
     const currentDate = new Date();
     const timeRemaining = (deadline - currentDate) / 1000;
 
